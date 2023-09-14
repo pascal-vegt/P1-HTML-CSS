@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        select, input[type="text"], input[type="date"], input[type="email"], input[type="password"], input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel Booking Form</h1>
+    <form action="#" method="post">
+        <label for="firstname">Voornaam:</label>
+        <input type="text" id="firstname" name="firstname" required pattern="[A-Za-z]+" title="Mag geen cijfers bevatten">
+
+        <label for="lastname">Achternaam:</label>
+        <input type="text" id="lastname" name="lastname" required pattern="[A-Za-z]+" title="Mag geen cijfers bevatten">
+
+        <label>Geslacht:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Man</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Vrouw</label>
+
+        <label for="street">Straat met huisnummer:</label>
+        <input type="text" id="street" name="street" required>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required>
+
+        <label for="city">Stad:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="country">Land:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="bsn">BSN-nummer:</label>
+        <input type="text" id="bsn" name="bsn" required pattern="[0-9]{1,9}" title="Mag niet meer dan 9 cijfers bevatten">
+
+        <label for="destination">Vakantieland:</label>
+        <select id="destination" name="destination" required>
+            <option value="Nederland">Nederland</option>
+            <option value="Frankrijk">Frankrijk</option>
+            <option value="Spanje">Spanje</option>
+            <!-- Add more countries as needed -->
+        </select>
+
+        <label for="departureDate">Datum van vertrek:</label>
+        <input type="date" id="departureDate" name="departureDate" required min="<?php echo date('Y-m-d'); ?>">
+
+        <label for="returnDate">Datum van terugkomst:</label>
+        <input type="date" id="returnDate" name="returnDate" required min="<?php echo date('Y-m-d'); ?>">
+
+        <label for="travelmates">Aantal reisgenoten (max 4):</label>
+        <input type="number" id="travelmates" name="travelmates" required min="0" max="4">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Wachtwoord (om account aan te maken):</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Boek nu">
+    </form>
+</body>
+</html>
