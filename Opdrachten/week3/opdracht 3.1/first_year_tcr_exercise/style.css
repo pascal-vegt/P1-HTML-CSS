@@ -37,3 +37,34 @@ nav a {
 nav img {
   width: 5vw;
 }
+
+/* Achtergrondafbeelding instellen */
+body {
+  background-image: url('./img/background.jpeg');
+  background-size: cover;
+  position: relative;
+}
+
+/* Breedte en hoogte van het scherm */
+body {
+  width: 100vw; /* Volledige scherm breedte */
+  height: calc(100vh - 0px); /* Volledige scherm hoogte minus de hoogte van de navigatiebalk */
+}
+
+/* Achtergrondkleur voor pagina's met een zwarte achtergrond */
+.zwarte-achtergrond-pagina {
+  text-align: center;
+  background-color: black;
+  color: white; /* Voor tekstkleur aanpassen aan de achtergrond */
+}
+
+/* Hoogte en achtergrondkleur van de footer */
+footer {
+  height: 50px; /* Vervang 'Ypx' door de gewenste hoogte in pixels */
+  background-color:#00a8c7 ; /* Kleur van de navigatiebalk */;
+}
+
+/* Lettertype wijzigen naar Goldman (Google Fonts) */
+body {
+  font-family: 'Goldman', sans-serif; /* Zorg ervoor dat je de juiste URL van Google Fonts in je HTML hebt toegevoegd om het lettertype te laden */
+}
