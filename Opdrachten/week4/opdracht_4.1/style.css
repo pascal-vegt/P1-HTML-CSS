@@ -1,29 +1,62 @@
+        /* Algemene opmaak */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header */
+        header {
+            width: 100%;
+            min-height: 33vh;
+            background-image: url('achtergrond.jpg'); /* Vervang 'achtergrond.jpg' met de gewenste afbeelding */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+        }
 
-h1 {
-    font-size: 24px;
-    color: blue;
-    font-weight: bold;
-    font-style: italic;
-}
+        header h1 {
+            font-size: 24px;
+            color: white; /* Aangepast voor leesbaarheid */
+            font-weight: bold;
+            font-style: italic;
+        }
 
-h2 {
-    font-size: 20px;
-    color: #0000ff;
-    font-weight: bold;
-}
+        header h2 {
+            font-size: 20px;
+            color: #0000ff;
+            font-weight: bold;
+        }
 
-h3 {
-    font-size: 16px;
-    color: Teal;
-    font-weight: bold;
-}
+        header h3 {
+            font-size: 16px;
+            color: teal;
+            font-weight: bold;
+        }
 
-p {
-    color: #4D4D4D;
-    font-weight: bold;
-}
+        header p {
+            color: white; /* Aangepast voor leesbaarheid */
+            font-weight: bold;
+        }
 
-a {
-    color: #8A2BE2;
-    text-decoration: none;
-}
+        header a {
+            color: #8A2BE2;
+            text-decoration: none;
+            border-bottom: none;
+        }
+
+        /* Afbeeldingen */
+        img {
+            width: 50vw;
+        }
+
+        /* Articles */
+        article {
+            border: 2px solid #555; /* Voorbeeldkleur voor de rand */
+            border-radius: 10px; /* Rond de randen */
+            margin: 10px;
+            padding: 10px;
+        }
+
+        article:first-child {
+            border-left-width: 5px; /* Maak de linkerrand dikker voor het eerste artikel */
+        }
