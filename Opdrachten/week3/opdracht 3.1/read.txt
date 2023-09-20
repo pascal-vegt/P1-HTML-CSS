@@ -1,0 +1,3 @@
+
+- contact pagina nog even afmaken met een formulier
+- op je index heb je maar 1 h1-tag nodig
