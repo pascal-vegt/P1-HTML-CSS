@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'goldman'; cursive:
 }
 html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Goldman", cursive;
+  min-height: 100vh;
+  position: relative;
 }
 
 nav {
@@ -38,33 +40,173 @@ nav img {
   width: 5vw;
 }
 
-/* Achtergrondafbeelding instellen */
-body {
-  background-image: url('./img/background.jpeg');
-  background-size: cover;
-  position: relative;
+.index_main {
+  background-image: url(./img/background.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.index_main h1 {
+    color: #FFF;
+  font-family: Goldman;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.index_main main {
+  display: flex;
+justify-content: center;
+align-items: center;
+height: 90vh;
 }
 
-/* Breedte en hoogte van het scherm */
-body {
-  width: 100vw; /* Volledige scherm breedte */
-  height: calc(100vh - 0px); /* Volledige scherm hoogte minus de hoogte van de navigatiebalk */
+@font-face {
+  font-family: 'goldman';
+  src: url(./fonts/Goldman-Regular.ttf) ;
 }
 
-/* Achtergrondkleur voor pagina's met een zwarte achtergrond */
-.zwarte-achtergrond-pagina {
-  text-align: center;
-  background-color: black;
-  color: white; /* Voor tekstkleur aanpassen aan de achtergrond */
+@font-face {
+  font-family: 'goldman_bold';
+  src: url(./fonts/Goldman-Bold.ttf) ;
 }
 
-/* Hoogte en achtergrondkleur van de footer */
 footer {
-  height: 50px; /* Vervang 'Ypx' door de gewenste hoogte in pixels */
-  background-color:#00a8c7 ; /* Kleur van de navigatiebalk */;
+  height: 12vh;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  position: absolute;
+  background-color: #00a8c7;
+  text-align: center;
+  padding-top: 24px;
+  color: #FFF;
+font-family: Goldman;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;  
 }
 
-/* Lettertype wijzigen naar Goldman (Google Fonts) */
-body {
-  font-family: 'Goldman', sans-serif; /* Zorg ervoor dat je de juiste URL van Google Fonts in je HTML hebt toegevoegd om het lettertype te laden */
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 83vh;
+}
+
+p {
+font-family: Goldman;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+}
+
+h1 {
+font-family: Goldman;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+h2 {
+font-family: Goldman;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+section img {
+  width: 313px;
+height: 303px;
+flex-shrink: 0;
+}
+article {
+  width: 50%;
+}
+
+.black {
+  background: #151515;
+}
+
+
+.black h1 {
+  color: #ffffff;
+}
+
+.black p {
+color: #ffffff;
+}
+
+.black h1 {
+  color: #ffffff;
+}
+
+
+
+.black h2 {
+  color: #ffffff;
+}
+
+.black h1 {
+
+}
+
+.black section {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 83vh;
+}
+
+.black p {
+color: #ffffff;
+font-family: Goldman;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+}
+
+.black h1 {
+  color: #ffffff;
+  font-family: Goldman;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+.black h2 {
+  color: #ffffff;
+font-family: Goldman;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.black section img {
+  width: 313px;
+height: 303px;
+flex-shrink: 0;
+}
+.black article {
+  width: 50%;
 }
