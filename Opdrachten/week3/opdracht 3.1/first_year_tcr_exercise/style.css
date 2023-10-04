@@ -213,11 +213,12 @@ flex-shrink: 0;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block; 
 }
 
 .dropbtn:hover {
  background-color: #f9f9f9;
+ color: #00a8c7;
 }
 
 .dropdown-content a:hover {

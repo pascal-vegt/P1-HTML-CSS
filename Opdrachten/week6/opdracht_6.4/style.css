@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: #f9f9aa;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
