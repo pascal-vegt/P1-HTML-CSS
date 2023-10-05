@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: border-box;
+}
+
+div {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.first {
+    background-color: #0000ff;
+}
+
+.second {
+    background-color: #000000;
+}
+
+.third {
+    background-color: #ff0000;
+}
+
+.fourth {
+    background-color: #00ff00;
+}
+
+p {
+    width: 200px;
+    height: 200px;
+}
