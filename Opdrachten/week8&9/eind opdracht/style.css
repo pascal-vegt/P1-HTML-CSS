@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 300vh;
+    background-image: url(./img/landing-page.jpg);
+    background-image: url(./img/new-york-page.png);
+    background-image: url(./img/contact-mountain.png);
+    background-repeat: no-repeat;
+}
+
+
+footer {
+    min-width: 100vw;
+    min-height: 10vh;
+    position: fixed;
+    background-color: #131c27;
+    color: #ffffff;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 40vw;
+}
+
+nav {
+    min-width: 100vw;
+    min-height: 10vh;
+    position: sticky;
+    background-color: #131c27;
+    color: #ffffff;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 40vw;
+}
+
+.exception_font {
+    font-family: 'Pattaya', sans-serif;
+    font-size: x-large;
+}
+
+h1 {
+    text-align: center;
+}
