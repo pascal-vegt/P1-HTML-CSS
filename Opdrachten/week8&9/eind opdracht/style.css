@@ -5,18 +5,15 @@
 }
 
 body {
-    height: 300vh;
-    background-image: url(./img/landing-page.jpg);
-    background-image: url(./img/new-york-page.png);
-    background-image: url(./img/contact-mountain.png);
-    background-repeat: no-repeat;
+    position: relative;
 }
 
 
 footer {
     min-width: 100vw;
     min-height: 10vh;
-    position: fixed;
+    position: absolute;
+    bottom: 0;
     background-color: #131c27;
     color: #ffffff;
     display: flex;
@@ -56,6 +53,68 @@ nav div {
     font-size: x-large;
 }
 
-h1 {
-    text-align: center;
+.firstpart, .thirdpart h1, .firstpart, .thirdpart p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstpart, .secondpart, .thirdtext {
+    color: #d0d0d0;
+}
+
+.boxes img {
+    display: flex;
+    padding: 10px 100px 10px 100px;
+    width: 60px;
+    height: 60px;
+    background-color: #131c27;
+}
+
+.thirdpart {
+    display: flex;
+    justify-content: center;
+    margin: 0px 50px 0px 50px;
+}
+
+.firstpart {
+    min-height: 100vh;
+    background-image: url(./img/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+}
+
+.secondpart {
+    min-height: 100vh;
+    background-image: url(./img/new-york-page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.thirdpart {
+    min-height: 100vh;
+    background-image: url(./img/contact-mountain.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.thirdtext {
+    background-color: #131c27;
+    width: 100vw;
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.thirdboxes {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    min-width: 15vw;
 }
