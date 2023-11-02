@@ -1,10 +1,15 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
 }
-    
-button {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
+
+nav {
+    background-color: #131c27;
+}
+nav h1, nav p, nav a {
+    color: #f0f0f0;
 }

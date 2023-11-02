@@ -10,7 +10,7 @@ body {
 
 
 footer {
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 10vh;
     position: absolute;
     bottom: 0;
@@ -30,11 +30,11 @@ footer div {
 }
 
 nav {
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 10vh;
     position: sticky;
     background-color: #131c27;
-    color: #ffffff;
+    color: #d0d0d0;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
@@ -53,43 +53,33 @@ nav div {
     font-size: x-large;
 }
 
-.firstpart, .thirdpart h1, .firstpart, .thirdpart p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.firstpart, .thirdtext {
+    color: #d0d0d0;
 }
 
-.firstpart, .secondpart, .thirdtext {
-    color: #d0d0d0;
+.secondpart {
+    color: #ffffff;
 }
 
 .boxes img {
     display: flex;
-    padding: 10px 100px 10px 100px;
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 15%;
     background-color: #131c27;
-}
-
-.thirdpart {
-    display: flex;
-    justify-content: center;
-    margin: 0px 50px 0px 50px;
+    padding: 10px 0px 10px 0px
 }
 
 .firstpart {
     min-height: 100vh;
-    background-image: url(./img/landing-page.jpg);
+    background: linear-gradient(rgba(0 , 0 , 0 , 0.5), transparent), url(./img/landing-page.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-flow: column;
 }
 
 .secondpart {
     min-height: 100vh;
-    background-image: url(./img/new-york-page.png);
+    background: linear-gradient(rgba(0 , 0 , 0 , 0.5), transparent), url(./img/new-york-page.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -97,7 +87,7 @@ nav div {
 
 .thirdpart {
     min-height: 100vh;
-    background-image: url(./img/contact-mountain.png);
+    background: linear-gradient(rgba(0 , 0 , 0 , 0.5), transparent), url(./img/contact-mountain.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -105,16 +95,83 @@ nav div {
 
 .thirdtext {
     background-color: #131c27;
-    width: 100vw;
+    width: 100%;
     padding: 60px 0px 60px 0px;
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
+.firstpart div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.button {
+    background-color: #4c6e97;
+    padding: 30px 80px 30px 80px;
+    color: #d0d0d0;
+    font-size: x-large;
+    line-height: 1rem;  
+}
+
+.thirdtext h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.thirdtext p {
+    font-size: x-large;
+    text-align: center;
+}
+
+.secondpart div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondpart h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.specialp {
+    font-size: 37px; 
+}
+
+.articles {
+    box-shadow: 0px 1px 20px #c0c0c0;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25vw;
+    height: 40vh;
+    text-align: center;
+}
+
 .thirdboxes {
     padding: 4rem;
     display: flex;
-    justify-content: space-between;
-    min-width: 15vw;
+    justify-content: space-around;
+    min-width: 91%;
+}
+
+.articles p {
+    font-size: x-large;
+}
+
+.articles h2 {
+    font-size: xx-large;
+}
+
+
+
+.articles p, .articles h2 {
+    margin: 50px 25px 0px 25px;
 }
