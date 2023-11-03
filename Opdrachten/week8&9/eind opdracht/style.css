@@ -91,6 +91,9 @@ nav div {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .thirdtext {
@@ -151,7 +154,7 @@ nav div {
     display: flex;
     flex-flow: column nowrap;
     width: 25vw;
-    height: 40vh;
+    height: 45vh;
     text-align: center;
 }
 
@@ -174,4 +177,46 @@ nav div {
 
 .articles p, .articles h2 {
     margin: 50px 25px 0px 25px;
+}
+
+.contactdiv {
+    width:55vw;
+    height: 45vh;
+    background-color: rgba(19, 27, 38, 0.7);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #c0c0c0;
+}
+
+.contactdiv form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contactdiv h2 {
+    font-size: xx-large;
+}
+
+.submitbutton {
+    width: 100%;
+    height: 10%;
+    background-color: #4c6e97;
+    border: none;
+    color: #c0c0c0;
+}
+
+form div {
+    font-size: large;
+}
+
+input {
+    width: 220px;
+    height: 35px;
+    margin-left: 30px;
 }
