@@ -138,6 +138,7 @@ nav div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 4rem;
 }
 
 .secondpart h1 {
@@ -209,6 +210,9 @@ nav div {
     background-color: #4c6e97;
     border: none;
     color: #c0c0c0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0px;
 }
 
 form div {
@@ -219,4 +223,16 @@ input {
     width: 220px;
     height: 35px;
     margin-left: 30px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.inputs div {
+    flex-direction: row;
+    
 }
